@@ -5,6 +5,10 @@ import statistics as stats
 import math 
 import numpy as np
 
+print ("                  ")
+print ("Financial Analysis")
+print ("----------------")
+
 csvpath= os.path.join('budget_data.csv')
 
 with open(csvpath, "r", newline="") as archivito:
@@ -22,7 +26,8 @@ with open(csvpath, "r", newline="") as archivito:
 
         total = sum(profit_losses_list)
         print(f'total profit is {total}')
-        
+
+
 number_of_months = len(profit_losses_list)
 print("Total Months: ", number_of_months)
 

@@ -5,6 +5,7 @@ import statistics as stats
 import math 
 import numpy as np
 
+
 csvpath= os.path.join('election_data.csv')
 
 with open(csvpath, "r", newline="") as archivito:
@@ -26,6 +27,7 @@ with open(csvpath, "r", newline="") as archivito:
         # total_voters = sum(voter_id_list)
         # print(f'Total number of voters is {total_voters}')
         
+print ("                  ")
 print ("Election Results")
 print ("----------------")
 
