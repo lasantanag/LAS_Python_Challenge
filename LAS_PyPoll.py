@@ -34,3 +34,40 @@ print ("----------------")
 total_voters = len(voter_id_list)
 print("Total number of voters is: ", total_voters)
 print ("----------------")
+
+
+#calculate votes of each candidates
+
+Khan = candidate_list.count("Khan")
+khan_percentage = (Khan/total_voters)*100
+print("Khan: ",khan_percentage,"%", "(",Khan, ")")
+
+Correy = candidate_list.count("Correy")
+correy_percentage = (Correy/total_voters)*100
+print("Correy: ",correy_percentage,"%", "(",Correy, ")")
+
+Li = candidate_list.count("Li")
+li_percentage = (Li/total_voters)*100
+print("Li: ",li_percentage,"%", "(",Li, ")")
+
+Tooley = candidate_list.count("O'Tooley")
+tooley_percentage = (Tooley/total_voters)*100
+print("O'Tooley: ",tooley_percentage,"%", "(",Tooley, ")")
+
+# if statements to identify and print winner candidate
+
+print(   )
+
+if Khan > Correy and Khan > Li and Khan > Tooley:
+        print( "Winner: Khan!")
+
+elif Correy > Li and Correy > Tooley:
+        print ("Winner: Correy!")
+
+elif Li > Tooley:
+        print ("Winner: Li!")
+
+else:
+        print("Winner: O'Tooley!")
+
+
